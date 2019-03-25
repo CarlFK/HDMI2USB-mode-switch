@@ -243,8 +243,7 @@ def switch_mode(args, board, newmode):
                 board = found_board
                 break
 
-            if (args.timeout and starttime -
-                    time.time() > args.timeout):
+            if (args.timeout and starttime - time.time() > args.timeout):
                 raise SystemError("Timeout!")
 
         if args.verbose:
